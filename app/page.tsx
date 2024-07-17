@@ -25,30 +25,34 @@ export default function Home() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     document.querySelectorAll(".reveal").forEach((text) => {
-      // Split text into words
-      const words = text.textContent.split(" ");
-
-      // Wrap each word in a span with a class for animation
-      text.innerHTML = words
-        .map((word) => `<span class="word">${word}</span>`)
-        .join(" ");
-
-      // Animation setup
-      gsap.from(text.querySelectorAll(".word"), {
-        opacity: 0.3, // Initial opacity
-        y: 50,
-        ease: "power3.out",
-        stagger: 0.1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: text,
-          start: "top 80%",
-          end: "+=100",
-          scrub: true,
-        },
-      });
+      // Check if textContent is not null or undefined
+      if (text.textContent) {
+        // Split text into words
+        const words = text.textContent.split(" ");
+  
+        // Wrap each word in a span with a class for animation
+        text.innerHTML = words
+          .map((word) => `<span class="word">${word}</span>`)
+          .join(" ");
+  
+        // Animation setup
+        gsap.from(text.querySelectorAll(".word"), {
+          opacity: 0.3, // Initial opacity
+          y: 50,
+          ease: "power3.out",
+          stagger: 0.1,
+          duration: 1,
+          scrollTrigger: {
+            trigger: text,
+            start: "top 80%",
+            end: "+=100",
+            scrub: true,
+          },
+        });
+      }
     });
   }, []);
+  
   return (
     <>
       {/* Banner Section */}
