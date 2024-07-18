@@ -132,7 +132,8 @@ function Header() {
                 />
               </svg>
               Join Discord
-              <svg className="inline-block ml-2"
+              <svg
+                className="inline-block ml-2"
                 width="10"
                 height="11"
                 viewBox="0 0 10 11"
@@ -233,12 +234,7 @@ function Header() {
                     </a>
                   </div>
                   <div className="py-6">
-                    <button
-                      type="button"
-                      className="bg-blue-100 hover:bg-blue-100 text-white font-normal py-2 px-4"
-                    >
-                      Request Early Access
-                    </button>
+                    <Button></Button>
                   </div>
                 </div>
               </div>
