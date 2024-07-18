@@ -47,9 +47,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-html, body {
+/* html, body {
   overflow-x: hidden;
-}
+} */
 body {
   font-family: 'SF Pro Display';
   color: rgb(var(--foreground-rgb));
