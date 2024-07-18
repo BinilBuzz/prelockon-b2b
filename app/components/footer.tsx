@@ -43,7 +43,7 @@ function Footer() {
             safeguarding consumers. Every preorder in our platform will be
             Transferable,Tradable and Verifiable before it expires.
           </p>
-          <ul className="flex flex-col md:flex-row flex-wrap justify-center gap-3 md:gap-12 py-8">
+          <ul className="flex flex-col md:flex-row flex-wrap justify-center gap-3 md:gap-12 py-8 text-white">
             <li className="hover:underline">
               <Link href="#">Roadmap</Link>
             </li>
