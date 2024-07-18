@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import BackToTopButton from "./backtotopButton";
 
 function Footer() {
   return (
@@ -101,6 +102,8 @@ function Footer() {
           </div>
         </div>
       </footer>
+
+      <BackToTopButton />
     </>
   );
 }
