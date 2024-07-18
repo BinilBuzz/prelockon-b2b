@@ -29,12 +29,12 @@ export default function Home() {
       if (text.textContent) {
         // Split text into words
         const words = text.textContent.split(" ");
-  
+
         // Wrap each word in a span with a class for animation
         text.innerHTML = words
           .map((word) => `<span class="word">${word}</span>`)
           .join(" ");
-  
+
         // Animation setup
         gsap.from(text.querySelectorAll(".word"), {
           opacity: 0.3, // Initial opacity
@@ -52,7 +52,7 @@ export default function Home() {
       }
     });
   }, []);
-  
+
   return (
     <>
       {/* Banner Section */}
@@ -317,7 +317,498 @@ export default function Home() {
             booking confirmations, with built-in validation
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-6 relative">
+          {/* For Small Screen */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 md:gap-4 py-0 md:py-6 relative small-screen">
+            {/* Step 1 */}
+            <div className="p-6 text-center relative">
+              <div className="mb-2 z-50 relative">
+                <svg
+                  width="100%"
+                  height="158"
+                  viewBox="0 0 158 158"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_408_1489)">
+                    <circle cx="77" cy="77" r="66" fill="#F6F5FC" />
+                    <circle
+                      cx="77"
+                      cy="77"
+                      r="68"
+                      stroke="white"
+                      stroke-width="4"
+                    />
+                  </g>
+                  <g clip-path="url(#clip0_408_1489)">
+                    <path
+                      d="M81.5 53H58.5C55.46 53 53 55.46 53 58.5V89.5C53 92.54 55.46 95 58.5 95H74.78C73.02 92.6 72 89.68 72 86.5C72 78.5 78.5 72 86.5 72C86.66 72 86.84 72 87 72.02V58.5C87 55.46 84.54 53 81.5 53ZM61 61H69C70.1 61 71 61.9 71 63C71 64.1 70.1 65 69 65H61C59.9 65 59 64.1 59 63C59 61.9 59.9 61 61 61ZM71 81H61C59.9 81 59 80.1 59 79C59 77.9 59.9 77 61 77H71C72.1 77 73 77.9 73 79C73 80.1 72.1 81 71 81ZM79 73H61C59.9 73 59 72.1 59 71C59 69.9 59.9 69 61 69H79C80.1 69 81 69.9 81 71C81 72.1 80.1 73 79 73Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M86.5 97C80.71 97 76 92.29 76 86.5C76 80.71 80.71 76 86.5 76C92.29 76 97 80.71 97 86.5C97 92.29 92.29 97 86.5 97ZM86.5 80C82.916 80 80 82.916 80 86.5C80 90.084 82.916 93 86.5 93C90.084 93 93 90.084 93 86.5C93 82.916 90.084 80 86.5 80Z"
+                      fill="#06FACE"
+                    />
+                    <path
+                      d="M98.9995 101C98.4875 101 97.9755 100.804 97.5855 100.414L91.0855 93.914C90.3035 93.132 90.3035 91.868 91.0855 91.086C91.8675 90.304 93.1315 90.304 93.9135 91.086L100.414 97.586C101.196 98.368 101.196 99.632 100.414 100.414C100.024 100.804 99.5115 101 98.9995 101Z"
+                      fill="#06FACE"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_408_1489"
+                      x="0"
+                      y="0"
+                      width="158"
+                      height="158"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feMorphology
+                        radius="1"
+                        operator="dilate"
+                        in="SourceAlpha"
+                        result="effect1_dropShadow_408_1489"
+                      />
+                      <feOffset dx="2" dy="2" />
+                      <feGaussianBlur stdDeviation="4" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_408_1489"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_408_1489"
+                        result="shape"
+                      />
+                    </filter>
+                    <clipPath id="clip0_408_1489">
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="white"
+                        transform="translate(53 53)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <svg
+                className="absolute top-6.25 left-12.5 hidden xl:block"
+                width="234"
+                height="191"
+                viewBox="0 0 234 191"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H106.958V190H233"
+                  stroke="#2510AB"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="6 4"
+                />
+              </svg>
+
+              <span className="text-sm text-blue-100 font-semibold">
+                Step 1
+              </span>
+              <h3 className="text-xl py-3 text-black font-semibold">
+                Setup your preorder profile
+              </h3>
+              <p className="text-grey-300 text-sm">
+                Begin by creating your profile. Share details about the products
+                you offer, define the quantity, softcap, hardcap, delivery time,
+                delivery method, price, payment terms, and refund policy.
+              </p>
+            </div>
+            {/* Step 2 */}
+            <div className="p-6 text-center">
+              <div className="mt-2 z-50 relative">
+                <svg
+                  width="100%"
+                  height="158"
+                  viewBox="0 0 158 158"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_408_1526)">
+                    <circle cx="77" cy="77" r="66" fill="#F6F5FC" />
+                    <circle
+                      cx="77"
+                      cy="77"
+                      r="68"
+                      stroke="white"
+                      stroke-width="4"
+                    />
+                  </g>
+                  <g clip-path="url(#clip0_408_1526)">
+                    <path
+                      d="M99.4 86.6H97.8C96.92 86.6 96.2 87.32 96.2 88.2C96.2 89.08 96.92 89.8 97.8 89.8H99.4C100.28 89.8 101 89.08 101 88.2C101 87.32 100.28 86.6 99.4 86.6Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M96.3112 82.2C96.5832 82.2 96.8552 82.136 97.1112 81.992L98.5032 81.192C99.2712 80.744 99.5272 79.768 99.0952 79C98.6472 78.232 97.6712 77.976 96.9032 78.408L95.5112 79.208C94.7432 79.656 94.4872 80.632 94.9192 81.4C95.2232 81.912 95.7512 82.2 96.3112 82.2Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M98.4879 95.208L97.0959 94.408C96.3279 93.96 95.3519 94.232 94.9039 95C94.4559 95.768 94.7279 96.744 95.4959 97.192L96.8879 97.992C97.1439 98.136 97.4159 98.2 97.6879 98.2C98.2479 98.2 98.7759 97.912 99.0799 97.4C99.5279 96.632 99.2559 95.656 98.4879 95.208Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M57.8 88.2C57.8 87.32 57.08 86.6 56.2 86.6H54.6C53.72 86.6 53 87.32 53 88.2C53 89.08 53.72 89.8 54.6 89.8H56.2C57.08 89.8 57.8 89.08 57.8 88.2Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M58.4879 79.208L57.0959 78.408C56.3279 77.96 55.3519 78.232 54.9039 79C54.4559 79.768 54.7279 80.744 55.4959 81.192L56.8879 81.992C57.1439 82.136 57.4159 82.2 57.6879 82.2C58.2479 82.2 58.7759 81.912 59.0799 81.4C59.5279 80.632 59.2559 79.656 58.4879 79.208Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M56.8876 94.408L55.4956 95.208C54.7276 95.656 54.4716 96.632 54.9036 97.4C55.2076 97.912 55.7356 98.2 56.2956 98.2C56.5676 98.2 56.8396 98.136 57.0956 97.992L58.4876 97.192C59.2556 96.744 59.5116 95.768 59.0796 95C58.6316 94.232 57.6556 93.976 56.8876 94.408Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M71.4 65C71.4 61.912 73.912 59.4 77 59.4C80.088 59.4 82.6 61.912 82.6 65V72.2H88.2V64.2C88.2 58.024 83.176 53 77 53C70.824 53 65.8 58.024 65.8 64.2V72.2H71.4V65Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M74.1201 88.184L77.0001 92.488L79.8801 88.184L77.0001 83.864L74.1201 88.184Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M91.4 75.4H62.6C61.72 75.4 61 76.12 61 77V99.4C61 100.28 61.72 101 62.6 101H91.4C92.28 101 93 100.28 93 99.4V77C93 76.12 92.28 75.4 91.4 75.4ZM69 88.984C69 89.864 68.28 90.584 67.4 90.584C66.52 90.584 65.8 89.864 65.8 88.984V87.384C65.8 86.504 66.52 85.784 67.4 85.784C68.28 85.784 69 86.504 69 87.384V88.984ZM83.128 89.064L78.328 96.264C78.024 96.712 77.528 96.984 77 96.984C76.472 96.984 75.96 96.712 75.672 96.264L70.872 89.064C70.52 88.52 70.52 87.832 70.872 87.288L75.672 80.088C76.264 79.192 77.736 79.192 78.328 80.088L83.128 87.288C83.48 87.832 83.48 88.52 83.128 89.064ZM88.2 88.984C88.2 89.864 87.48 90.584 86.6 90.584C85.72 90.584 85 89.864 85 88.984V87.384C85 86.504 85.72 85.784 86.6 85.784C87.48 85.784 88.2 86.504 88.2 87.384V88.984Z"
+                      fill="#06FACE"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_408_1526"
+                      x="0"
+                      y="0"
+                      width="158"
+                      height="158"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feMorphology
+                        radius="1"
+                        operator="dilate"
+                        in="SourceAlpha"
+                        result="effect1_dropShadow_408_1526"
+                      />
+                      <feOffset dx="2" dy="2" />
+                      <feGaussianBlur stdDeviation="4" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_408_1526"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_408_1526"
+                        result="shape"
+                      />
+                    </filter>
+                    <clipPath id="clip0_408_1526">
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="white"
+                        transform="translate(53 53)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <svg
+                className="absolute top-8.5 right-32.5 hidden xl:block"
+                width="234"
+                height="191"
+                viewBox="0 0 234 191"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M233 1H114.576V190H1"
+                  stroke="#06FACE"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="6 4"
+                />
+              </svg>
+              <span className="text-sm text-blue-100 font-semibold">
+                Step 2
+              </span>
+              <h3 className="text-xl py-4 text-black font-semibold">
+                Await Approval
+              </h3>
+              <p className="text-grey-300 text-sm">
+                Every preorder proposal undergoes an approval process.
+                Initially, it will be reviewed by the DDA Team (in-house and
+                volunteers). In the future, a DAO will approve each proposal
+                request.
+              </p>
+            </div>
+            {/* Step 3 */}
+            <div className="p-6 text-center">
+              <div className="mb-1 z-50 relative">
+                <svg
+                  width="100%"
+                  height="158"
+                  viewBox="0 0 158 158"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_408_1505)">
+                    <circle cx="77" cy="77" r="66" fill="#F6F5FC" />
+                    <circle
+                      cx="77"
+                      cy="77"
+                      r="68"
+                      stroke="white"
+                      stroke-width="4"
+                    />
+                  </g>
+                  <path
+                    d="M87.501 62H91.5013C91.9016 62 92.301 61.8003 92.4018 61.4C92.6015 60.9997 92.4978 60.6003 92.2021 60.2998L86.2021 54.2998C85.9026 53.9993 85.5023 53.8995 85.102 54.1001C84.7016 54.3008 84.502 54.6003 84.502 54.9997V59C84.501 60.7002 85.8008 62 87.501 62Z"
+                    fill="#06FACE"
+                  />
+                  <path
+                    d="M88.5 80C89.8727 80.0043 91.2315 80.2759 92.5003 80.7997V63.9037C92.1782 64.018 91.8413 64.0853 91.5 64.1034H87.5006C86.8423 64.1098 86.1893 63.9848 85.5798 63.7358C84.9703 63.4869 84.4166 63.1188 83.951 62.6533C83.4855 62.1877 83.1175 61.634 82.8685 61.0245C82.6195 60.415 82.4945 59.762 82.501 59.1037V55.1005C82.519 54.7592 82.5863 54.4223 82.7006 54.1002H61.5C59.7998 54.1002 58.5 55.4 58.5 57.1002V95.0998C58.5 96.8 59.7998 98.0998 61.5 98.0998H79.9963C78.4008 96.2 77.5003 93.8 77.5003 91.1005C77.5003 84.8998 82.3963 80 88.5 80ZM66.5006 66.0003H75.5006C76.1006 66.0003 76.501 66.4006 76.501 67.0006C76.501 67.6006 76.1006 68.001 75.5006 68.001H66.5006C65.9006 68.001 65.5003 67.6006 65.5003 67.0006C65.5003 66.4006 65.9006 66.0003 66.5006 66.0003ZM66.5006 71H84.5006C85.1006 71 85.501 71.4003 85.501 72.0003C85.501 72.6003 85.1006 73.0006 84.5006 73.0006H66.5006C65.9006 73.0006 65.5003 72.6003 65.5003 72.0003C65.5003 71.4003 65.9006 71 66.5006 71ZM65.5003 77C65.5003 76.4 65.9006 75.9997 66.5006 75.9997H80.5003C81.1003 75.9997 81.5006 76.4 81.5006 77C81.5006 77.6 81.1003 78.0003 80.5003 78.0003H66.5006C65.9006 78.0003 65.5003 77.6 65.5003 77Z"
+                    fill="#2510AB"
+                  />
+                  <path
+                    d="M88.5 81.9997C86.72 81.9997 84.9799 82.5275 83.4999 83.5164C82.0198 84.5054 80.8663 85.911 80.1851 87.5555C79.5039 89.2 79.3257 91.0096 79.6729 92.7555C80.0202 94.5013 80.8774 96.1049 82.136 97.3636C83.3947 98.6223 84.9984 99.4795 86.7442 99.8267C88.49 100.174 90.2996 99.9958 91.9442 99.3146C93.5887 98.6334 94.9943 97.4798 95.9832 95.9998C96.9722 94.5197 97.5 92.7797 97.5 90.9997C97.505 89.8164 97.2755 88.6438 96.825 87.5496C96.3745 86.4555 95.7117 85.4614 94.875 84.6246C94.0383 83.7879 93.0442 83.1252 91.95 82.6746C90.8558 82.2241 89.6833 81.9947 88.5 81.9997ZM92.4005 88.4L89.4043 94.4C89.3529 94.5449 89.2582 94.6706 89.133 94.7601C89.0079 94.8495 88.8583 94.8984 88.7045 94.9001H88.5048C88.3734 94.9038 88.2428 94.879 88.122 94.8272C88.0012 94.7755 87.893 94.6982 87.805 94.6006L84.7963 91.5997C84.7031 91.508 84.629 91.3989 84.5782 91.2784C84.5274 91.158 84.5009 91.0287 84.5004 90.898C84.4998 90.7674 84.5251 90.6378 84.5749 90.517C84.6247 90.3961 84.6979 90.2863 84.7903 90.1939C84.8827 90.1015 84.9925 90.0283 85.1133 89.9785C85.2342 89.9288 85.3637 89.9035 85.4944 89.904C85.6251 89.9046 85.7544 89.931 85.8748 89.9818C85.9952 90.0326 86.1044 90.1068 86.196 90.2L88.1957 92.1997L90.5957 87.3997C90.7954 86.8995 91.3954 86.6998 91.8955 86.9993C92.4005 87.3997 92.6002 87.9997 92.4005 88.4Z"
+                    fill="#06FACE"
+                  />
+                  <defs>
+                    <filter
+                      id="filter0_d_408_1505"
+                      x="0"
+                      y="0"
+                      width="158"
+                      height="158"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feMorphology
+                        radius="1"
+                        operator="dilate"
+                        in="SourceAlpha"
+                        result="effect1_dropShadow_408_1505"
+                      />
+                      <feOffset dx="2" dy="2" />
+                      <feGaussianBlur stdDeviation="4" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_408_1505"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_408_1505"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <svg
+                className="absolute top-8.5 right-12.5 hidden xl:block"
+                width="234"
+                height="191"
+                viewBox="0 0 234 191"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H106.958V190H233"
+                  stroke="#2510AB"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="6 4"
+                />
+              </svg>
+              <span className="text-sm text-blue-100 font-semibold">
+                Step 3
+              </span>
+              <h3 className="text-xl py-4 text-black font-semibold">
+                 Active in community to address queries
+              </h3>
+              <p className="text-grey-300 text-sm">
+                After the approval, you put your skin into the game to address
+                all queries and concerns by the community. Your accountability
+                and interaction with the community can significantly influence
+                your success. 
+              </p>
+            </div>
+            {/* Step 4 */}
+            <div className="p-6 text-center">
+              <div className="mt-2 z-50 relative">
+                <svg
+                  width="100%"
+                  height="158"
+                  viewBox="0 0 158 158"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_408_1526)">
+                    <circle cx="77" cy="77" r="66" fill="#F6F5FC" />
+                    <circle
+                      cx="77"
+                      cy="77"
+                      r="68"
+                      stroke="white"
+                      stroke-width="4"
+                    />
+                  </g>
+                  <g clip-path="url(#clip0_408_1526)">
+                    <path
+                      d="M99.4 86.6H97.8C96.92 86.6 96.2 87.32 96.2 88.2C96.2 89.08 96.92 89.8 97.8 89.8H99.4C100.28 89.8 101 89.08 101 88.2C101 87.32 100.28 86.6 99.4 86.6Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M96.3112 82.2C96.5832 82.2 96.8552 82.136 97.1112 81.992L98.5032 81.192C99.2712 80.744 99.5272 79.768 99.0952 79C98.6472 78.232 97.6712 77.976 96.9032 78.408L95.5112 79.208C94.7432 79.656 94.4872 80.632 94.9192 81.4C95.2232 81.912 95.7512 82.2 96.3112 82.2Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M98.4879 95.208L97.0959 94.408C96.3279 93.96 95.3519 94.232 94.9039 95C94.4559 95.768 94.7279 96.744 95.4959 97.192L96.8879 97.992C97.1439 98.136 97.4159 98.2 97.6879 98.2C98.2479 98.2 98.7759 97.912 99.0799 97.4C99.5279 96.632 99.2559 95.656 98.4879 95.208Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M57.8 88.2C57.8 87.32 57.08 86.6 56.2 86.6H54.6C53.72 86.6 53 87.32 53 88.2C53 89.08 53.72 89.8 54.6 89.8H56.2C57.08 89.8 57.8 89.08 57.8 88.2Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M58.4879 79.208L57.0959 78.408C56.3279 77.96 55.3519 78.232 54.9039 79C54.4559 79.768 54.7279 80.744 55.4959 81.192L56.8879 81.992C57.1439 82.136 57.4159 82.2 57.6879 82.2C58.2479 82.2 58.7759 81.912 59.0799 81.4C59.5279 80.632 59.2559 79.656 58.4879 79.208Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M56.8876 94.408L55.4956 95.208C54.7276 95.656 54.4716 96.632 54.9036 97.4C55.2076 97.912 55.7356 98.2 56.2956 98.2C56.5676 98.2 56.8396 98.136 57.0956 97.992L58.4876 97.192C59.2556 96.744 59.5116 95.768 59.0796 95C58.6316 94.232 57.6556 93.976 56.8876 94.408Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M71.4 65C71.4 61.912 73.912 59.4 77 59.4C80.088 59.4 82.6 61.912 82.6 65V72.2H88.2V64.2C88.2 58.024 83.176 53 77 53C70.824 53 65.8 58.024 65.8 64.2V72.2H71.4V65Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M74.1201 88.184L77.0001 92.488L79.8801 88.184L77.0001 83.864L74.1201 88.184Z"
+                      fill="#2510AB"
+                    />
+                    <path
+                      d="M91.4 75.4H62.6C61.72 75.4 61 76.12 61 77V99.4C61 100.28 61.72 101 62.6 101H91.4C92.28 101 93 100.28 93 99.4V77C93 76.12 92.28 75.4 91.4 75.4ZM69 88.984C69 89.864 68.28 90.584 67.4 90.584C66.52 90.584 65.8 89.864 65.8 88.984V87.384C65.8 86.504 66.52 85.784 67.4 85.784C68.28 85.784 69 86.504 69 87.384V88.984ZM83.128 89.064L78.328 96.264C78.024 96.712 77.528 96.984 77 96.984C76.472 96.984 75.96 96.712 75.672 96.264L70.872 89.064C70.52 88.52 70.52 87.832 70.872 87.288L75.672 80.088C76.264 79.192 77.736 79.192 78.328 80.088L83.128 87.288C83.48 87.832 83.48 88.52 83.128 89.064ZM88.2 88.984C88.2 89.864 87.48 90.584 86.6 90.584C85.72 90.584 85 89.864 85 88.984V87.384C85 86.504 85.72 85.784 86.6 85.784C87.48 85.784 88.2 86.504 88.2 87.384V88.984Z"
+                      fill="#06FACE"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_408_1526"
+                      x="0"
+                      y="0"
+                      width="158"
+                      height="158"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feMorphology
+                        radius="1"
+                        operator="dilate"
+                        in="SourceAlpha"
+                        result="effect1_dropShadow_408_1526"
+                      />
+                      <feOffset dx="2" dy="2" />
+                      <feGaussianBlur stdDeviation="4" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_408_1526"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_408_1526"
+                        result="shape"
+                      />
+                    </filter>
+                    <clipPath id="clip0_408_1526">
+                      <rect
+                        width="48"
+                        height="48"
+                        fill="white"
+                        transform="translate(53 53)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <span className="text-sm text-blue-100 font-semibold">
+                Step 4
+              </span>
+              <h3 className="text-xl py-4 text-black font-semibold">
+                Deliver your promise
+              </h3>
+              <p className="text-grey-300 text-sm">
+                Ultimately, the most important step is to deliver on your
+                promises. Your ability to meet expectations will determine your
+                success.
+              </p>
+            </div>
+          </div>
+          {/* For Small Screen */}
+
+          {/* For Bigger Screen */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-6 relative bigger-screen">
             {/* Step 1 */}
             <div className="p-6 text-center relative">
               <div className="mb-2 z-50 relative">
@@ -1291,7 +1782,7 @@ export default function Home() {
           {/*  */}
           <div className="flex flex-col md:flex-row justify-between gap-6 pt-14">
             <div className="w-full md:w-6/12 relative">
-              <h3 className="text-white text-2xl font-semibold leading-leading-12 relative">
+              <h3 className="text-white text-2xl font-semibold leading-8 lg:leading-leading-12 relative">
                 We are <span className="text-green-100">empowering</span>{" "}
                 entrepreneurs, innovators and creators while safeguarding
                 consumers.
@@ -1520,7 +2011,7 @@ export default function Home() {
                   fill="#2510AB"
                 />
               </svg>
-              <h4 className="text-2xl font-semibold pt-2">For Creators</h4>
+              <h4 className="text-xl lg:text-2xl font-semibold pt-2">For Creators</h4>
               <svg
                 className="absolute left-5.5 hidden lg:block"
                 width="91"
@@ -1669,7 +2160,7 @@ export default function Home() {
                   </clipPath>
                 </defs>
               </svg>
-              <h4 className="text-2xl font-semibold pt-2 relative">
+              <h4 className="text-xl lg:text-2xl font-semibold pt-2 relative">
                 For Users
               </h4>
               <svg

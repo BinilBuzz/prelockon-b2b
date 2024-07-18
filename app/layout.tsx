@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import "./globals.css";
 
 
+
 export const metadata: Metadata = {
   title: "PreLockOn",
   description: "PreLockOn",
