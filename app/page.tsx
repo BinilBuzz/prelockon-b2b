@@ -181,7 +181,7 @@ export default function Home() {
               <h3 className="text-xl py-4 text-white font-semibold">
                 Validate <span className="text-blue-300">Early</span>
               </h3>
-              <p className="font-normal">
+              <p className="font-normal text-white">
                 Gain early validation for your ideas, ensuring market demand
                 before full development begins.
               </p>
@@ -220,7 +220,7 @@ export default function Home() {
               <h3 className="text-xl py-4 text-white font-semibold">
                 Blind <span className="text-blue-300">Trust</span>
               </h3>
-              <p className="font-normal">
+              <p className="font-normal text-white">
                 Engage with your community to build trust and gather invaluable
                 feedback from potential users.
               </p>
@@ -258,7 +258,7 @@ export default function Home() {
               <h3 className="text-xl py-4 text-white font-semibold">
                 Lower <span className="text-blue-300">Financial Risk</span>
               </h3>
-              <p className="font-normal">
+              <p className="font-normal text-white">
                 Secure funding with minimal financial risk, as funds are only
                 released when milestones are met.
               </p>
@@ -292,7 +292,7 @@ export default function Home() {
 
       {/* How Prelock Works Section */}
       <section className="bg-white relative">
-        <div className="mx-auto text-center max-w-7xl items-center justify-between py-16 lg:py-20 px-4 md:px-4 border-b relative">
+        <div className="mx-auto text-center max-w-7xl items-center justify-between pt-16 pb-6 lg:pt-20 lg:pb-6 px-4 md:px-4 border-b relative">
           <h2 className="text-black text-xl md:text-2xl lg:text-32xl font-bold relative">
             How <span className="text-blue-100">Prelockon</span> works: Simple
             and Secure Steps
@@ -317,7 +317,7 @@ export default function Home() {
             booking confirmations, with built-in validation
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4 py-6 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-6 relative">
             {/* Step 1 */}
             <div className="p-6 text-center relative">
               <div className="mb-2 z-50 relative">
@@ -1244,7 +1244,7 @@ export default function Home() {
           {/*  */}
           <div className="flex flex-col md:flex-row justify-between gap-6 border-b border-blue-25">
             <div className="w-full md:w-6/12 flex justify-center items-start flex-col pl-0 lg:pl-12">
-              <div className="bg-blue-400 px-4 py-2 rounded-full self-start">
+              <div className="bg-blue-400 px-4 py-2 rounded-full self-start text-white">
                 <svg
                   className="inline-block mr-1"
                   width="14"
@@ -1264,7 +1264,7 @@ export default function Home() {
                 </svg>{" "}
                 All preorders in our platform are tokenized on-chain
               </div>
-              <h3 className="text-xl md:text-2xl lg:text-32xl mt-4 font-bold leading-leading-243">
+              <h3 className="text-white text-xl md:text-2xl lg:text-32xl mt-4 font-bold leading-leading-243">
                 Users can trade and transfer before it expires
               </h3>
               {/* Button */}
@@ -1291,7 +1291,7 @@ export default function Home() {
           {/*  */}
           <div className="flex flex-col md:flex-row justify-between gap-6 pt-14">
             <div className="w-full md:w-6/12 relative">
-              <h3 className="text-2xl font-semibold leading-leading-12 relative">
+              <h3 className="text-white text-2xl font-semibold leading-leading-12 relative">
                 We are <span className="text-green-100">empowering</span>{" "}
                 entrepreneurs, innovators and creators while safeguarding
                 consumers.
@@ -1313,12 +1313,12 @@ export default function Home() {
               </svg>
             </div>
             <div className="w-full md:w-6/12 ">
-              <p>
+              <p className="text-white">
                 We are empowering entrepreneurs, innovators and creators while
                 safeguarding consumers. Every preorder in our platform will be
                 Transferable,Tradable and Verifiable before it expires.
               </p>
-              <ul className="pt-8 leading-8">
+              <ul className="pt-8 leading-8 text-white">
                 <li>
                   <svg
                     className="inline-block mr-1.5"
@@ -1537,7 +1537,7 @@ export default function Home() {
                 />
               </svg>
 
-              <p className="text-grey-300 pt-3 font-bold">
+              <p className="text-grey-300 pt-3 font-semibold">
                 We are empowering entrepreneurs, innovators and creators while
                 safeguarding consumers.
               </p>
@@ -1688,7 +1688,7 @@ export default function Home() {
                 />
               </svg>
 
-              <p className="text-grey-300 pt-3 font-bold">
+              <p className="text-grey-300 pt-3 font-semibold">
                 We are empowering entrepreneurs, innovators and creators while
                 safeguarding consumers.
               </p>
