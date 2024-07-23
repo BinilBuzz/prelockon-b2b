@@ -12,6 +12,7 @@ import Link from "next/link";
 import user1 from "../app/images/user.gif";
 import user2 from "../app/images/user2.png";
 import forcreators from "../app/images/for-creators.png";
+import banner from "../app/images/banner-img.jpg";
 
 export default function Home() {
   const settings = {
@@ -56,6 +57,41 @@ export default function Home() {
   return (
     <>
       {/* Banner Section */}
+      <svg
+        className="absolute left-0 top-76"
+        width="331"
+        height="508"
+        viewBox="0 0 331 508"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g opacity="0.1" filter="url(#filter0_f_821_2576)">
+          <circle cx="77" cy="254" r="130" fill="#E04DE2" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_821_2576"
+            x="-177"
+            y="0"
+            width="508"
+            height="508"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="62"
+              result="effect1_foregroundBlur_821_2576"
+            />
+          </filter>
+        </defs>
+      </svg>
       <section className="mx-auto max-w-7xl  text-center items-center justify-between p-6 lg:px-8 relative">
         <div className="mx-auto text-center max-w-7xl  w-full mt-6 relative">
           <svg
@@ -112,8 +148,8 @@ export default function Home() {
 
         <Button></Button>
 
-        <div className="bg-blue-100 w-full my-10 sm:min-h-36 md:min-h-72 lg:min-h-[512px]">
-          <video width="100%" height="512" controls preload="none">
+        <div className="bg-white w-full my-10">
+          {/* <video width="100%" height="512" controls preload="none">
             <source src="/path/to/video.mp4" type="video/mp4" />
             <track
               src="/path/to/captions.vtt"
@@ -122,7 +158,13 @@ export default function Home() {
               label="English"
             />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+
+          <Image
+            className="border border-grey-50"
+            src={banner}
+            alt="Banner Image"
+          />
         </div>
       </section>
 
@@ -2011,7 +2053,9 @@ export default function Home() {
                   fill="#2510AB"
                 />
               </svg>
-              <h4 className="text-xl lg:text-2xl font-semibold pt-2">For Creators</h4>
+              <h4 className="text-xl lg:text-2xl font-semibold pt-2">
+                For Creators
+              </h4>
               <svg
                 className="absolute left-5.5 hidden lg:block"
                 width="91"
