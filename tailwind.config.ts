@@ -26,6 +26,7 @@ const config: Config = {
         12.5: "12.5rem",
         32.5: "32.5rem",
         5.5: "5.5rem",
+        76: "12rem",
       },
       inset: {
         "26": "6.5rem",
@@ -49,6 +50,7 @@ const config: Config = {
           "400": "#2e227a",
         },
         grey: {
+          "50": "#e5e4e5",
           "100": "#1C1D21",
           "200": "#d1cee2",
           "300": "#1C1D21",
