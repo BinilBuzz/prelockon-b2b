@@ -4,7 +4,7 @@ const Button = ({}) => {
   return (
     <button
       type="button"
-      className="bg-blue-100 hover:bg-blue-200 text-white font-normal py-3 px-8 shadow-button"
+      className="bg-blue-100 text-white font-normal py-3 px-8 shadow-button"
     >
       Request Early Access
     </button>
