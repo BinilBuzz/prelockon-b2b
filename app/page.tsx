@@ -12,6 +12,7 @@ import Link from "next/link";
 import user1 from "../app/images/user.gif";
 import user2 from "../app/images/user2.png";
 import forcreators from "../app/images/for-creators.png";
+import forusers from "../app/images/for-users.png";
 import banner from "../app/images/banner-img.jpg";
 
 export default function Home() {
@@ -190,13 +191,13 @@ export default function Home() {
             />
           </svg>
 
-          <p className="text-grey-200 py-6 sm:w-full lg:w-128 mx-auto">
+          {/* <p className="text-grey-200 py-6 sm:w-full lg:w-128 mx-auto">
             We are empowering entrepreneurs, innovators and creators while
             safeguarding consumers. Every preorder in our platform will be
             Transferable,Tradable and Verifiable before it expires.
-          </p>
+          </p> */}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 py-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 py-6 mt-3">
             {/*  */}
             <div className="border-2 border-blue-300 p-6 text-left hover:shadow-xl">
               <svg
@@ -260,7 +261,7 @@ export default function Home() {
                 />
               </svg>
               <h3 className="text-xl py-4 text-white font-semibold">
-                Blind <span className="text-blue-300">Trust</span>
+                Build <span className="text-blue-300">Trust</span>
               </h3>
               <p className="font-normal text-white">
                 Engage with your community to build trust and gather invaluable
@@ -1773,9 +1774,9 @@ export default function Home() {
 
       {/* Request Early Access */}
       <section className="bg-blue-pattern bg-cover">
-        <div className="mx-auto text-left max-w-7xl items-center justify-between pt-16 pb-16 lg:pt-8 lg:pb-20  px-4 md:px-4">
+        <div className="mx-auto text-left max-w-7xl items-center justify-between pt-16 lg:pt-2  px-4 md:px-4">
           {/*  */}
-          <div className="flex flex-col md:flex-row justify-between gap-6 border-b border-blue-25">
+          <div className="flex flex-col md:flex-row justify-between gap-6">
             <div className="w-full md:w-6/12 flex justify-center items-start flex-col pl-0 lg:pl-12">
               <div className="bg-blue-400 px-4 py-2 rounded-full self-start text-white">
                 <svg
@@ -1804,7 +1805,7 @@ export default function Home() {
               <div className="pt-8">
                 <button
                   type="button"
-                  className="bg-white hover:bg-blue-200 hover:text-white text-blue-200 font-bold py-3 px-8 shadow-button"
+                  className="bg-white  text-blue-200 font-bold py-3 px-8 shadow-button"
                 >
                   Request Early Access
                 </button>
@@ -1822,7 +1823,7 @@ export default function Home() {
           </div>
 
           {/*  */}
-          <div className="flex flex-col md:flex-row justify-between gap-6 pt-14">
+          {/* <div className="flex flex-col md:flex-row justify-between gap-6 pt-14">
             <div className="w-full md:w-6/12 relative">
               <h3 className="text-white text-2xl font-semibold leading-8 lg:leading-leading-12 relative">
                 We are <span className="text-green-100">empowering</span>{" "}
@@ -1954,53 +1955,105 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-white">
-        <div className="mx-auto text-left max-w-7xl items-center justify-between py-16 lg:py-20 px-4 md:px-4">
-          <svg
-            className="mb-5"
-            width="57"
-            height="35"
-            viewBox="0 0 57 35"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M56.2 35H31V15.4L40.8 -6.67572e-06H53.4L47.8 14H56.2V35ZM25.4 35H0.2V15.4L10 -6.67572e-06H22.6L17 14H25.4V35Z"
-              fill="#2510AB"
-            />
-          </svg>
-          <div className="flex flex-col md:flex-row  justify-between gap-9">
-            <div className="w-full md:w-3/5 text-2xl md:text-3xl lg:text-32xl leading-8  md:leading-8 lg:leading-10">
-              <Slider {...settings}>
+      <section className="bg-white mx-auto text-left max-w-7xl py-16 lg:pt-20 px-4 md:px-4">
+        <Slider {...settings}>
+          <div className="items-center justify-between">
+            <svg
+              className="mb-5"
+              width="57"
+              height="35"
+              viewBox="0 0 57 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M56.2 35H31V15.4L40.8 -6.67572e-06H53.4L47.8 14H56.2V35ZM25.4 35H0.2V15.4L10 -6.67572e-06H22.6L17 14H25.4V35Z"
+                fill="#2510AB"
+              />
+            </svg>
+            <div className="flex flex-col md:flex-row  justify-between gap-9">
+              <div className="w-full md:w-3/5 text-2xl md:text-3xl lg:text-32xl leading-8  md:leading-8 lg:leading-10">
                 <div className="reveal text-grey-300 font-bold">
                   There are amazing ideas in every corner of the world but do
                   not have equal opportunities to go to market.
                 </div>
-                {/*  */}
-                <div className="reveal text-grey-300 font-bold ">
-                  There are amazing ideas in every corner of the world but do
-                  not have equal opportunities to go to market.
-                </div>
-                <div className="reveal text-grey-300 font-bold ">
-                  There are amazing ideas in every corner of the world but do
-                  not have equal opportunities to go to market.
-                </div>
-              </Slider>
-            </div>
-            <div className="w-full md:w-2/5 text-grey-300">
-              According to the Global Startup Ecosystem Report by Startup
-              Genome, startup ecosystems in regions like Silicon Valley and
-              London receive a disproportionate amount of venture capital
-              funding, with over 80% of global VC funding concentrated in just
-              10 cities
+              </div>
+              <div className="w-full md:w-2/5 text-grey-300">
+                According to the Global Startup Ecosystem Report by Startup
+                Genome, startup ecosystems in regions like Silicon Valley and
+                London receive a disproportionate amount of venture capital
+                funding, with over 80% of global VC funding concentrated in just
+                10 cities.
+              </div>
             </div>
           </div>
-        </div>
+
+          {/*  */}
+          <div className="items-center justify-between">
+            <svg
+              className="mb-5"
+              width="57"
+              height="35"
+              viewBox="0 0 57 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M56.2 35H31V15.4L40.8 -6.67572e-06H53.4L47.8 14H56.2V35ZM25.4 35H0.2V15.4L10 -6.67572e-06H22.6L17 14H25.4V35Z"
+                fill="#2510AB"
+              />
+            </svg>
+            <div className="flex flex-col md:flex-row  justify-between gap-9">
+              <div className="w-full md:w-3/5 text-2xl md:text-3xl lg:text-32xl leading-8  md:leading-8 lg:leading-10">
+                <div className="reveal text-grey-300 font-bold">
+                  Producers, manufacturers, and creators often struggle to
+                  predict demand accurately.
+                </div>
+              </div>
+              <div className="w-full md:w-2/5 text-grey-300">
+                According to a study by the Harvard Business Review, up to 52%
+                of forecasted products fail to meet demand
+              </div>
+            </div>
+          </div>
+
+          {/*  */}
+          <div className="items-center justify-between">
+            <svg
+              className="mb-5"
+              width="57"
+              height="35"
+              viewBox="0 0 57 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M56.2 35H31V15.4L40.8 -6.67572e-06H53.4L47.8 14H56.2V35ZM25.4 35H0.2V15.4L10 -6.67572e-06H22.6L17 14H25.4V35Z"
+                fill="#2510AB"
+              />
+            </svg>
+            <div className="flex flex-col md:flex-row  justify-between gap-9">
+              <div className="w-full md:w-3/5 text-2xl md:text-3xl lg:text-32xl leading-8  md:leading-8 lg:leading-10">
+                <div className="reveal text-grey-300 font-bold">
+                  Millions of producers lost wealth and sometimes life with the
+                  lack of minimum support price.
+                </div>
+              </div>
+              <div className="w-full md:w-2/5 text-grey-300">
+                According to a report by the International Food Policy Research
+                Institute (IFPRI), farmers in India faced significant economic
+                distress, with over 60,000 deaths linked to agrarian crises
+                between 1995 and 2018, underscoring the dire consequences of the
+                lack of minimum support price for millions of producers.
+              </div>
+            </div>
+          </div>
+        </Slider>
       </section>
 
       {/* What Does It Matter Section */}
@@ -2011,11 +2064,11 @@ export default function Home() {
             <h2 className="text-black text-xl md:text-2xl lg:text-32xl font-bold">
               What does it matter?
             </h2>
-            <p className="text-grey-300 font-normal pt-6 sm:w-full lg:w-128 mx-auto">
+            {/* <p className="text-grey-300 font-normal pt-6 sm:w-full lg:w-128 mx-auto">
               We are empowering entrepreneurs, innovators and creators while
               safeguarding consumers. Every preorder in our platform will be
               Transferable,Tradable and Verifiable before it expires.
-            </p>
+            </p> */}
           </div>
           {/*  */}
           {/*  */}
@@ -2072,10 +2125,10 @@ export default function Home() {
                 />
               </svg>
 
-              <p className="text-grey-300 pt-3 font-semibold">
+              {/* <p className="text-grey-300 pt-3 font-semibold">
                 We are empowering entrepreneurs, innovators and creators while
                 safeguarding consumers.
-              </p>
+              </p> */}
               <ul className="pt-2 leading-8">
                 <li>
                   <svg
@@ -2145,7 +2198,7 @@ export default function Home() {
               <div className="mt-12">
                 <button
                   type="button"
-                  className="bg-blue-100 hover:bg-blue-200 text-white font-normal py-3 px-8 shadow-button"
+                  className="bg-blue-100 text-white font-normal py-3 px-8 shadow-button"
                 >
                   Request Early Access{" "}
                   <svg
@@ -2223,10 +2276,11 @@ export default function Home() {
                 />
               </svg>
 
-              <p className="text-grey-300 pt-3 font-semibold">
+              {/* <p className="text-grey-300 pt-3 font-semibold">
                 We are empowering entrepreneurs, innovators and creators while
                 safeguarding consumers.
-              </p>
+              </p> */}
+
               <ul className="pt-2 leading-8">
                 <li>
                   <svg
@@ -2290,12 +2344,15 @@ export default function Home() {
                 </li>
               </ul>
 
-              <div className="bg-black w-full h-64 mt-7"></div>
+              <div className="bg-black w-full h-auto sm:h-auto lg:h-64  mt-7 bg-cover">
+                <Image className="mix-blend-screen" src={forusers} alt="" />
+              </div>
+
               <div className="mt-12">
                 <Link href="#" target="_blank">
                   <button
                     type="button"
-                    className="bg-blue-100 hover:bg-blue-200 text-white font-normal py-3 px-8 shadow-button"
+                    className="bg-blue-100 text-white font-normal py-3 px-8 shadow-button"
                   >
                     View More{" "}
                     <svg
