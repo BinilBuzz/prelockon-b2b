@@ -48,7 +48,7 @@ function Footer() {
             <li className="hover:underline">
               <Link href="#">Roadmap</Link>
             </li>
-            <li>
+            <li className="hover:underline">
               <Link href="#">
                 <svg
                   className="inline-block mr-2"
@@ -94,10 +94,10 @@ function Footer() {
                 </svg>
               </Link>
             </li>
-            <li>
+            <li className="hover:underline">
               <Link href="#">Request Early Access</Link>
             </li>
-            <li>
+            <li className="hover:underline">
               <Link href="#">Privacy Policy</Link>
             </li>
           </ul>

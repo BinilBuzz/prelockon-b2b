@@ -170,7 +170,7 @@ function Header() {
           <div className="hidden lg:flex lg:justify-end">
             <button
               type="button"
-              className="bg-blue-100 text-white font-normal py-3 px-8 shadow-button"
+              className="bg-blue-100 hover:bg-blue-200 text-white font-normal py-3 px-8 shadow-button"
             >
               Launch Your Preorder
             </button>
