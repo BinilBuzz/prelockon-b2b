@@ -13,7 +13,7 @@ import user1 from "../app/images/user.gif";
 import user2 from "../app/images/user2.png";
 import forcreators from "../app/images/for-creators.png";
 import forusers from "../app/images/for-users.png";
-import banner from "../app/images/banner-img.jpg";
+import banner from "../app/images/banner-img.jpg";  
 
 export default function Home() {
   const settings = {
@@ -1805,7 +1805,7 @@ export default function Home() {
               <div className="pt-8">
                 <button
                   type="button"
-                  className="bg-white  text-blue-200 font-bold py-3 px-8 shadow-button"
+                  className="bg-white hover:bg-blue-200  text-blue-200 hover:text-white  font-bold py-3 px-8 shadow-button"
                 >
                   Request Early Access
                 </button>
@@ -2198,7 +2198,7 @@ export default function Home() {
               <div className="mt-12">
                 <button
                   type="button"
-                  className="bg-blue-100 text-white font-normal py-3 px-8 shadow-button"
+                  className="bg-blue-100 hover:bg-blue-200 text-white font-normal py-3 px-8 shadow-button"
                 >
                   Request Early Access{" "}
                   <svg
@@ -2352,7 +2352,7 @@ export default function Home() {
                 <Link href="#" target="_blank">
                   <button
                     type="button"
-                    className="bg-blue-100 text-white font-normal py-3 px-8 shadow-button"
+                    className="bg-blue-100 hover:bg-blue-200 text-white font-normal py-3 px-8 shadow-button"
                   >
                     View More{" "}
                     <svg
