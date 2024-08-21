@@ -19,9 +19,11 @@ export default function Home() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
+ 
   };
   // Text Animation
   useEffect(() => {
